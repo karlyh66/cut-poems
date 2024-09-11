@@ -1,0 +1,154 @@
+body {
+    font-family: 'Times New Roman', serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#left-panel {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+#word-bank {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+#workspace {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    padding: 10px;
+    position: relative;
+    min-height: 400px;
+}
+.word {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 5px;
+    cursor: move;
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    color: #333;
+    background-color: #f9f7f1;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    transform-origin: center center;
+}
+.word-workspace {
+    position: absolute;
+}
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #e0e0e0;
+}
+button:active {
+    background-color: #d0d0d0;
+}
+/* #custom-word-input {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#custom-word-input input {
+    flex: 1;
+    padding: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+#custom-word-input button {
+    padding: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+#custom-word-input button:hover {
+    background-color: #e0e0e0;
+} */
+#action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+}
+#action-buttons button {
+    flex: 1;
+    margin: 0 5px; 
+}
+
+#action-buttons button:first-child {
+    margin-left: 0; /* remove left margin from left button */ 
+}
+
+#action-buttons button:last-child {
+    margin-right: 0; /* remove right margin from right button */ 
+}
+#text-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#scissors-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+#scissors {
+    width: 300px; 
+    height: 300px;
+    cursor: pointer;
+}
+#news-bg {
+    position: fixed;
+    bottom: -190px;  
+    right: -140px;
+    z-index: -1;  /* layer to back */
+    pointer-events: none;  /* non-drag */
+}
+#news-bg img {
+    width: 500px; 
+    height: auto;
+    opacity: 0.5;  
+    transform: rotate(10deg);
+}
+#footer-links {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #999;
+}
+#twitter-link, #coffee-link {
+    color: #999;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#twitter-link:hover, #coffee-link:hover {
+    color: #666;
+}
+.link-separator {
+    margin: 0 5px;
+    color: #999;
+}

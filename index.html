@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cut poems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="left-panel">
+        <textarea id="text-input" rows="7" placeholder="paste source text here (try your favorite book or a news article!)"></textarea>
+        <button onclick="processInput()">process input text</button>
+        <button onclick="useRandomText()">use surprise literature</button>
+        <div id="word-bank"></div>
+        <!-- <div id="custom-word-input">
+            <input type="text" id="custom-word" placeholder="add a word">
+            <button onclick="addCustomWord()">add</button>
+        </div> -->
+        <div id="action-buttons">
+            <button onclick="getMoreWords()">more words</button>
+            <button onclick="startOver()">start over</button>
+        </div>
+    </div>
+    <div id="workspace">
+        <div id="footer-links">
+            <a id="twitter-link" href="https://twitter.com/kbarley66" target="_blank" rel="noopener noreferrer">show me your poem</a>
+            <span class="link-separator">|</span>
+            <a id="coffee-link" href="https://www.buymeacoffee.com/karlyh" target="_blank" rel="noopener noreferrer">send me a coffee?</a>
+        </div>
+    </div>
+    <div id="scissors-container">
+        <img id="scissors" src="scissors.png" alt="delete word by dragging here">
+    </div>
+    <div id="news-bg">
+        <img src="news.png" alt="newspaper decor">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
