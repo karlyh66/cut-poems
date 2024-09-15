@@ -10,13 +10,13 @@ or use an excerpt from one of my favorite books.
 enjoy and [show me your poems](https://x.com/kbarley66) :) 
 
 ### friends made some poems :*
-![steve poem](ex/steve.jpeg){width=200px}
+<img src="ex/steve.jpeg" alt="steve poem" width="200">
 *By [Steve Li](https://x.com/steveshenli)*
 
-![chris poem](ex/chris.png){width=200px}
+<img src="ex/chris.png" alt="chris poem" width="200">
 *By Chris Liang*
 
-![amelia poem](ex/amelia.png){width=200px}
+<img src="ex/amelia.png" alt="amelia poem" width="200">
 *By [Amelia Cossentino](https://www.instagram.com/ameliacomix/)*
 
 ### todos
